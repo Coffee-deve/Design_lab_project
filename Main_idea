@@ -1,0 +1,12 @@
+"Personal Media Server Project with Raspberry Pi"
+
+Goal: to transform the Raspberry Pi into a server that hosts and streams media such as videos, music, and photos to other devices on the same network. It can serve as a central hub for all digital media in a home.
+
+Components:
+Raspberry Pi (model 3B+ I believe)
+Micro SD Card
+External Hard Drive or a large capacity USB drive (for storing media files)
+HDMI Cable and monitor (for initial setup)
+optionally keyboard, mouse, additional mictroprocessor for sharing data
+
+For the server: plex or selfwritten webserver
