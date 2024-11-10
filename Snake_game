@@ -1,0 +1,15 @@
+Hardware requirements:
+- FRDM-KL05Z development board
+- matrix keyboard / joystick module
+- SPI display TFT LCD 2,4″ 240x320px z czytnikiem SD SPI ILI9341
+
+Work schedule:
+1. schematic of connections 
+2. code
+3. block modules representing actions in code
+4. presentation of the project with explicit explanation
+
+
+
+
+
