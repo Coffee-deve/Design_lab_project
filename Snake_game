@@ -1,7 +1,7 @@
 Hardware requirements:
 - FRDM-KL05Z development board
 - matrix keyboard / joystick module
-- SPI display TFT LCD 2,4″ 240x320px z czytnikiem SD SPI ILI9341
+- OLED DISPLAY 128X64 SSD1306
 
 Work schedule:
 1. schematic of connections 
