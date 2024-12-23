@@ -23,16 +23,18 @@
 #define green 0x9FE0
 #define gold 0xFEA1
 Adafruit_ST7735 tft(TFT_CS, TFT_DC, TFT_RST);
-int score = 0; // we dont want to count to the score first appearance of apples
+int score = 0; 
 
-struct Point {
-  uint8_t x;
+class Point {
+  public:
+  uint8_t x; // byte
   uint8_t y;
 };
 
-struct Game;
+class Game;
 
-struct Snake {
+class Snake {
+  public:
   friend Game;
   enum Direction { Up = 1, Left = 2, Right = 3, Down = 4 };
 
@@ -68,25 +70,18 @@ private:
   Direction direction_;
 };
 
-struct Game {
+class Game {
+  public:
   Game(Snake &s, std::function<void(uint8_t, uint8_t)> on_food_added = nullptr) : snake_(s) {
 
     is_over_ = false;
     on_food_added_ = on_food_added;
   }
 
-  enum Pixel {
-    Empty = 0,
-    Up = 1,
-    Left = 2,
-    Right = 3,
-    Down = 4,
-    Head = 5,
-    Wall = 6,
-    Apple = 7
-  };
+  enum Pixel { Empty = 0, Up = 1, Left = 2, Right = 3, Down = 4, Head = 5, Wall = 6, Apple = 7 };
 
-struct FieldElement{
+class FieldElement{
+  public:
 FieldElement(){ 
   pixel_ = Pixel::Empty;
   has_food_ = false;
@@ -267,7 +262,7 @@ void setup() {
   Serial.begin(115200);
   delay(2000);
 
-  pinMode(DOWN_BUTTON, INPUT);
+  pinMode(DOWN_BUTTON, INPUT_PULLUP);
   pinMode(RIGHT_BUTTON, INPUT_PULLUP);
   pinMode(LEFT_BUTTON, INPUT_PULLUP);
   pinMode(UP_BUTTON, INPUT_PULLUP);
