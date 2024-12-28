@@ -13,13 +13,13 @@ SCK ---> D5
 LED ---> 3.3 V  
 
 #### Pinout for buttons
-Buttons on one side:
-D0 - 10k resistor -  Down
-D2 - Right
-D3 - Left
-D4 - Up
-All buttons on one side:
-GND ---> GND
+Buttons on one side:  
+D0 - 10k resistor -  Down  
+D2 - Right  
+D3 - Left  
+D4 - Up  
+All buttons on one side:  
+GND ---> GND  
 
 
 ## Server part:
