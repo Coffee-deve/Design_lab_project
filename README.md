@@ -3,14 +3,14 @@ The project focuses on the creation of the multimedia server, and also on the cr
 ## Snake game part:
 Details about the snake game part.  
 #### Pinout for TFT display:  
-VCC ---> 3.3 V     
-GND ---> GND
-CS  ---> D8
-RST ---> D6
-A0  ---> D1
-SDA ---> D7
-SCK ---> D5
-LED ---> 3.3 V
+VCC ---> 3.3 V        
+GND ---> GND  
+CS  ---> D8  
+RST ---> D6  
+A0  ---> D1  
+SDA ---> D7  
+SCK ---> D5  
+LED ---> 3.3 V  
 
 #### Pinout for buttons
 Buttons on one side:
