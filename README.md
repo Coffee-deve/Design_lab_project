@@ -20,7 +20,29 @@ SIGNAL ---> digital pin B1 and B2
 
 
 ## Server part:
-Details about the server part.
+
+Install Raspbian - installing the Raspbian OS on the Raspberry Pi. Download the latest version of Raspbian and write it to the SD card using imaging software.
+
+Initial Configuration - Bootting the Raspberry Pi with the newly installed Raspbian, completing the initial setup process, including configuring network settings to ensure the Pi is connected to the internet.
+
+Installing Media Server Software Plex Media Server
+
+Install Plex – installation for the Plex Media Server from the command line:
+```
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+echo "deb https://downloads.plex.tv/repo/deb public main" | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+```
+```
+sudo apt update
+sudo apt install plexmediaserver
+```
+
+Configure Plex - Accessing the Plex server interface via http://{raspberry_pi_IP_address}:32400/web on any browser within the network to set up libraries by pointing Plex to the directories where the media files are stored on the external drive.
+
+Organizing Media Files
+Connecting the external hard drive or USB drive to the Raspberry Pi and format it (NTFS or exFAT). Creating directories for different media types like Movies, TV Shows, Music, etc. Transferring the media files to the respective directories on the external storage.
+
+
 
 ## Final project:
 Connections of both parts.
